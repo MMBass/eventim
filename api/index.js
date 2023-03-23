@@ -13,6 +13,7 @@ const client = new MongoClient(dbUri);
 const collection = client.db("events").collection("events_data");
 
 app.get('/events', async (req, res) => {
+
     let results = await dbReadAll();
     res.send(results);
 });
