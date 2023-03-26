@@ -70,6 +70,9 @@ var U=Object.defineProperty,O=Object.defineProperties;var L=Object.getOwnPropert
 `;function S0({className:t}){const n=i.exports.useContext(m),a=i.exports.useContext(R),o=i.exports.useContext(B);i.exports.useEffect(()=>{},[]);const c=u=>{o.toggleBanner(u)};return e("div",{className:t,children:l(s0,{children:[e(A0,{}),e(w0,{className:"header"}),o.main.open&&l(k,{severity:"warning",children:[e(u0,{children:o.main.title}),o.main.message]}),e(T0,{children:l(_0,{children:[e(E,{path:"/",element:e(U0,{className:"page"})}),e(E,{path:"/about",element:e(L0,{className:"page"})}),e(E,{path:"*",element:e(N0,{className:"page"})})]})}),n.open&&n.child&&e(P0,{className:"drawer"}),a.main.open&&e(P,{color:a.main.color||"primary"}),a.circular.open&&e(i0,{color:a.main.color||"primary"}),o.snackbar.open&&e(d0,{open:o.snackbar.open,autoHideDuration:6e3,onClose:()=>{},children:e(k,{onClose:()=>{c("snackbar")},severity:o.snackbar.severity,sx:{width:"100%"},children:o.snackbar.message})}),e(B0,{})]})})}const I0=d(S0)`
   color: ${t=>t.theme.palette.secondary.main};
 
+  .page{
+    padding: 0;
+  }
   .page-h2{
     padding: 30px 0px 0px 35px;
     font-size: 40px;
